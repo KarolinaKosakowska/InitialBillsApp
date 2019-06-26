@@ -1,0 +1,16 @@
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\obj\Debug\netcoreapp2.1\BillsServices.csprojAssemblyReference.cache
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\obj\Debug\netcoreapp2.1\BillsServices.csproj.CoreCompileInputs.cache
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\obj\Debug\netcoreapp2.1\BillsServices.AssemblyInfoInputs.cache
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\obj\Debug\netcoreapp2.1\BillsServices.AssemblyInfo.cs
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsApplication.Views.dll
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsApplication.Views.pdb
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsServices.deps.json
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsServices.dll
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsServices.pdb
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsApplication.dll
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsData.dll
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsApplication.pdb
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\bin\Debug\netcoreapp2.1\BillsData.pdb
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\obj\Debug\netcoreapp2.1\BillsServices.csproj.CopyComplete
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\obj\Debug\netcoreapp2.1\BillsServices.dll
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\TransactionServices\obj\Debug\netcoreapp2.1\BillsServices.pdb

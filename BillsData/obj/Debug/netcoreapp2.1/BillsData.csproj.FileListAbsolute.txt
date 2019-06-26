@@ -1,0 +1,11 @@
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\bin\Debug\netcoreapp2.1\BillsData.deps.json
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\bin\Debug\netcoreapp2.1\BillsData.dll
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\obj\Debug\netcoreapp2.1\BillsData.csproj.CoreCompileInputs.cache
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\obj\Debug\netcoreapp2.1\BillsData.AssemblyInfoInputs.cache
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\obj\Debug\netcoreapp2.1\BillsData.AssemblyInfo.cs
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\obj\Debug\netcoreapp2.1\BillsData.csprojAssemblyReference.cache
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\bin\Debug\netcoreapp2.1\BillsData.runtimeconfig.json
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\bin\Debug\netcoreapp2.1\BillsData.runtimeconfig.dev.json
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\bin\Debug\netcoreapp2.1\BillsData.pdb
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\obj\Debug\netcoreapp2.1\BillsData.dll
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\BillsApplication\BillsData\obj\Debug\netcoreapp2.1\BillsData.pdb
