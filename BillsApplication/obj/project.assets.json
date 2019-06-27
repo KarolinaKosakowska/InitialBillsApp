@@ -12683,11 +12683,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\BillsApplication\\BillsApplication\\BillsApplication.csproj",
+      "projectUniqueName": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\REPOZYTORIA\\Initial_Exercises\\BillsApplication\\BillsApplication\\BillsApplication.csproj",
       "projectName": "BillsApplication",
-      "projectPath": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\BillsApplication\\BillsApplication\\BillsApplication.csproj",
+      "projectPath": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\REPOZYTORIA\\Initial_Exercises\\BillsApplication\\BillsApplication\\BillsApplication.csproj",
       "packagesPath": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\BillsApplication\\BillsApplication\\obj\\",
+      "outputPath": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\REPOZYTORIA\\Initial_Exercises\\BillsApplication\\BillsApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12706,8 +12706,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\BillsApplication\\BillsData\\BillsData.csproj": {
-              "projectPath": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\BillsApplication\\BillsData\\BillsData.csproj"
+            "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\REPOZYTORIA\\Initial_Exercises\\BillsApplication\\BillsData\\BillsData.csproj": {
+              "projectPath": "C:\\Users\\HP.LAPTOP-9OCPGB0M\\Desktop\\Kurs C#\\REPOZYTORIA\\Initial_Exercises\\BillsApplication\\BillsData\\BillsData.csproj"
             }
           }
         }

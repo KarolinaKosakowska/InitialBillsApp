@@ -35,7 +35,7 @@ namespace BillsApplication
         {
             return
                 GetAll()
-                .FirstOrDefault(asset => asset.ID== id);
+                .FirstOrDefault(asset => asset.ID == id);
         }
         public string GetCategory(int id)
         {
@@ -52,6 +52,43 @@ namespace BillsApplication
             {
                 return context.PaymentTypes
                     .FirstOrDefault(a => a.ID == id).PaymentName.ToString();
+            }
+            else return "";
+        }
+        public string GetTransactionTag(int id)
+        {
+            if (context.Tags.Any(a => a.ID == id))
+            {
+                return context.Tags
+                    .FirstOrDefault(a => a.ID == id).Name;
+            }
+            else return "";
+        }
+
+        public string GetProduct(int id)
+        {
+            if (context.Products.Any(a => a.ID == id))
+            {
+                return context.Products
+                    .FirstOrDefault(a => a.ID == id).Name;
+            }
+            else return "";
+        }
+        public int GetAmout(int id)
+        {
+            if (context.TransactionElements.Any(a => a.ID == id))
+            {
+                return context.TransactionElements
+                    .FirstOrDefault(a => a.ID == id).Amount;
+            }
+            else return 0;
+        }
+        public string GetUnit(int id)
+        {
+            if (context.Products.Any(a => a.ID == id))
+            {
+                return context.Products
+                    .FirstOrDefault(a => a.ID == id).Unit.ToString();
             }
             else return "";
         }

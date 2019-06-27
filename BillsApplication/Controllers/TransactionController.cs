@@ -33,8 +33,8 @@ namespace BillsApplication.Controllers
                     Description = result.Description,
                     TransactionDate = result.TransactionDate,
                     Price = result.Price,
-                    PaymentType=assets.GetPaymentType(result.ID)
-                    
+                    PaymentType = assets.GetPaymentType(result.ID)
+
                 });
             var model = new TransactionIndexModel()
             {
@@ -44,25 +44,27 @@ namespace BillsApplication.Controllers
         }
 
 
-        //    // GET: Transaction/Details/5
-        //    public async Task<IActionResult> Details(int? id)
-        //    {
-        //        if (id == null)
-        //        {
-        //            return NotFound();
-        //        }
-
-        //        var transaction = await _context.Transactions
-        //            .Include(t => t.Category)
-        //            .Include(t => t.PaymentType)
-        //            .FirstOrDefaultAsync(m => m.ID == id);
-        //        if (transaction == null)
-        //        {
-        //            return NotFound();
-        //        }
-
-        //        return View(transaction);
-        //    }
+        // GET: Transaction/Details/5
+        public IActionResult Details(int id)
+        {
+            var asset = assets.GetById(id);
+            var model = new DetailsModel
+            {
+                ID = id,
+                TransactionCategory = assets.GetCategory(id),
+                Name = asset.Name,
+                Description = asset.Description,
+                TransactionDate = asset.TransactionDate,
+                Price = asset.Price,
+                PaymentType = assets.GetPaymentType(id),
+                CreationDate = asset.CreateDate,
+                ModyficationDate = asset.ModyficationDate,
+                TransactionTags = assets.GetTransactionTag(id),
+                Product = assets.GetProduct(id),
+                Amount = assets.GetAmout(id),
+            };
+            return View(model);
+        }
 
         // GET: Transaction/Create
         public IActionResult Create()
@@ -76,14 +78,14 @@ namespace BillsApplication.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public  IActionResult Create([Bind("ID,Name,Description,TransactionCategoryID,TransactionDate,CreateDate,ModyficationDate,Price,PaymentTypeID")] Transaction transaction)
+        public IActionResult Create([Bind("ID,Name,Description,TransactionCategoryID,TransactionDate,CreateDate,ModyficationDate,Price,PaymentTypeID")] Transaction transaction)
         {
             if (ModelState.IsValid)
             {
-                assets.Add(transaction);              
+                assets.Add(transaction);
                 return RedirectToAction(nameof(Index));
             }
-           
+
             return View(transaction);
         }
     }
