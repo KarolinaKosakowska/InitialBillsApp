@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BillsApplication.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190626102602_init")]
-    partial class init
+    [Migration("20190627114706_updated")]
+    partial class updated
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,7 +61,7 @@ namespace BillsApplication.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<byte[]>("Attachment");
+                    b.Property<string>("Attachment");
 
                     b.Property<string>("Name")
                         .IsRequired();
@@ -81,7 +81,8 @@ namespace BillsApplication.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("PaymentName");
+                    b.Property<string>("PaymentName")
+                        .IsRequired();
 
                     b.HasKey("ID");
 
@@ -398,7 +399,7 @@ namespace BillsApplication.Migrations
                         .WithMany("Trasnsactions")
                         .HasForeignKey("PaymentTypeID");
 
-                    b.HasOne("BillsData.TransactionCategory", "Category")
+                    b.HasOne("BillsData.TransactionCategory", "TransactionCategory")
                         .WithMany("Transactions")
                         .HasForeignKey("TransactionCategoryID");
 

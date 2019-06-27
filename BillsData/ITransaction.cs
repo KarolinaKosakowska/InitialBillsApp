@@ -9,6 +9,8 @@ namespace BillsData
     {
         IEnumerable<Transaction> GetAll();
         Transaction GetById(int id);
+        string GetCategory(int id);
+        string GetPaymentType(int id);
         void Add(Transaction newAsset);
         //Task<List<Transaction>> GetList(int page = 1, int? pageLocalSize = null);
         //int TotalItems { get; set; }

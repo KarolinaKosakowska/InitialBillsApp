@@ -37,5 +37,23 @@ namespace BillsApplication
                 GetAll()
                 .FirstOrDefault(asset => asset.ID== id);
         }
+        public string GetCategory(int id)
+        {
+            if (context.TransactionCategories.Any(a => a.ID == id))
+            {
+                return context.TransactionCategories
+                    .FirstOrDefault(a => a.ID == id).Name;
+            }
+            else return "";
+        }
+        public string GetPaymentType(int id)
+        {
+            if (context.PaymentTypes.Any(a => a.ID == id))
+            {
+                return context.PaymentTypes
+                    .FirstOrDefault(a => a.ID == id).PaymentName.ToString();
+            }
+            else return "";
+        }
     }
 }

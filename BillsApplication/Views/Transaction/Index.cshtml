@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BillsData.Transaction>
+﻿@model BillsApplication.Models.TransactionForm.TransactionIndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -15,19 +15,18 @@
             <th>Description</th>
             <th>Transaction date</th>
             <th>Price</th>
-            <th>
+            <th>Payment Type<th>
                 
             </th>
             <th><a asp-action="Create" class="btn btn-success btn-lg"><i style="color: white;" class="glyphicon glyphicon-plus"></i></a></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Transactions)
         {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.TransactionCategory.Name)
-            </td>
+                @Html.DisplayFor(modelItem => item.TransactionCategory)</td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -40,7 +39,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
-
             <td>
                 @Html.DisplayFor(modelItem => item.PaymentType)
             </td>

@@ -24,5 +24,17 @@ namespace BillsApplication.Data
         public DbSet<TransactionElement> TransactionElements { get; set; }
         public DbSet<TransactionTag>TransactionTags { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder
+                .Entity<PaymentType>()
+                .Property(p => p.PaymentName)
+                .HasConversion(
+                    v => v.ToString(),
+                    v => (PaymentName)Enum.Parse(typeof(PaymentName), v));
+        }
+
     }
 }

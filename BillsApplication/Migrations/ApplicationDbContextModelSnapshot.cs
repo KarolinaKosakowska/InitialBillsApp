@@ -59,7 +59,7 @@ namespace BillsApplication.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<byte[]>("Attachment");
+                    b.Property<string>("Attachment");
 
                     b.Property<string>("Name")
                         .IsRequired();
@@ -79,7 +79,8 @@ namespace BillsApplication.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("PaymentName");
+                    b.Property<string>("PaymentName")
+                        .IsRequired();
 
                     b.HasKey("ID");
 

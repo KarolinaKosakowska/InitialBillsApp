@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BillsApplication.Data;
 using BillsData;
+using BillsApplication.Models.TransactionForm;
 
 namespace BillsApplication.Controllers
 {
@@ -22,8 +23,24 @@ namespace BillsApplication.Controllers
         // GET: Transaction
         public IActionResult Index()
         {
-            var assetModel = assets.GetAll();
-            return View(assetModel);
+            var assetModels = assets.GetAll();
+            var listingResult = assetModels
+                .Select(result => new TransactionListingModel
+                {
+                    ID = result.ID,
+                    TransactionCategory = assets.GetCategory(result.ID),
+                    Name = result.Name,
+                    Description = result.Description,
+                    TransactionDate = result.TransactionDate,
+                    Price = result.Price,
+                    PaymentType=assets.GetPaymentType(result.ID)
+                    
+                });
+            var model = new TransactionIndexModel()
+            {
+                Transactions = listingResult
+            };
+            return View(model);
         }
 
 

@@ -53,7 +53,7 @@ namespace BillsApplication.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    PaymentName = table.Column<int>(nullable: false)
+                    PaymentName = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
