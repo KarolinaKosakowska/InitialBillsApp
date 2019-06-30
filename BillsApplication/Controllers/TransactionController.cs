@@ -65,6 +65,7 @@ namespace BillsApplication.Controllers
                 TransactionTags = assets.GetTransactionTag(id),
                 Product = assets.GetProduct(id),
                 Amount = assets.GetAmout(id),
+          
             };
             return View(model);
         }
