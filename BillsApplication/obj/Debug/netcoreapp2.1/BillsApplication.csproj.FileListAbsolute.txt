@@ -82,3 +82,8 @@ C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsA
 C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsApplication\BillsApplication\obj\Debug\netcoreapp2.1\BillsApplication.csproj.CopyComplete
 C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsApplication\BillsApplication\obj\Debug\netcoreapp2.1\BillsApplication.dll
 C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsApplication\BillsApplication\obj\Debug\netcoreapp2.1\BillsApplication.pdb
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsApplication\BillsApplication\obj\Debug\netcoreapp2.1\Razor\Views\Files\Create.g.cshtml.cs
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsApplication\BillsApplication\obj\Debug\netcoreapp2.1\Razor\Views\Files\Delete.g.cshtml.cs
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsApplication\BillsApplication\obj\Debug\netcoreapp2.1\Razor\Views\Files\Details.g.cshtml.cs
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsApplication\BillsApplication\obj\Debug\netcoreapp2.1\Razor\Views\Files\Edit.g.cshtml.cs
+C:\Users\HP.LAPTOP-9OCPGB0M\Desktop\Kurs C#\REPOZYTORIA\Initial_Exercises\BillsApplication\BillsApplication\obj\Debug\netcoreapp2.1\Razor\Views\Files\Index.g.cshtml.cs

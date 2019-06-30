@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BillsApplication.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190627114706_updated")]
-    partial class updated
+    [Migration("20190630153826_second")]
+    partial class second
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,7 +61,7 @@ namespace BillsApplication.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Attachment");
+                    b.Property<byte[]>("Attachment");
 
                     b.Property<string>("Name")
                         .IsRequired();
@@ -141,7 +141,7 @@ namespace BillsApplication.Migrations
 
                     b.Property<DateTime>("TransactionDate");
 
-                    b.Property<string>("UserId");
+                    b.Property<string>("UserID");
 
                     b.HasKey("ID");
 
@@ -149,7 +149,7 @@ namespace BillsApplication.Migrations
 
                     b.HasIndex("TransactionCategoryID");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserID");
 
                     b.ToTable("Transactions");
                 });
@@ -405,7 +405,7 @@ namespace BillsApplication.Migrations
 
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
                         .WithMany()
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserID");
                 });
 
             modelBuilder.Entity("BillsData.TransactionElement", b =>

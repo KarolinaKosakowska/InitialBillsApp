@@ -1,6 +1,8 @@
 ﻿
 using BillsApplication.Data;
 using BillsData;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -92,5 +94,16 @@ namespace BillsApplication
             }
             else return "";
         }
+        public SelectList GetPaymentTypes()
+        {
+            var paymentTypes = new SelectList(context.PaymentTypes, "ID", "PaymentName");
+            return paymentTypes;
+        }
+        public SelectList GetTransactionCategories()
+        {
+            var transactionCategories = new SelectList(context.TransactionCategories, "ID", "Name");
+            return transactionCategories;
+        }
+
     }
 }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "752eafe49e4b2748db8457f5911229739192798a"
+    "signature": "684a23859604eb83241988325554b75cb89d3ea9"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,7 +9,8 @@
       "BillsData/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.App": "2.1.0",
-          "bootstrap": "4.1.3"
+          "bootstrap": "4.1.3",
+          "jQuery.Validation.Globalize": "1.1.0"
         },
         "runtime": {
           "BillsData.dll": {}
@@ -21,7 +22,24 @@
           "popper.js": "1.14.0"
         }
       },
+      "cldrjs/0.4.1": {},
       "jQuery/3.0.0": {},
+      "jquery-globalize/1.0.0": {
+        "dependencies": {
+          "cldrjs": "0.4.1"
+        }
+      },
+      "jQuery.Validation/1.14.0": {
+        "dependencies": {
+          "jQuery": "3.0.0"
+        }
+      },
+      "jQuery.Validation.Globalize/1.1.0": {
+        "dependencies": {
+          "jQuery.Validation": "1.14.0",
+          "jquery-globalize": "1.0.0"
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.1.0",
@@ -64,12 +82,40 @@
       "path": "bootstrap/4.1.3",
       "hashPath": "bootstrap.4.1.3.nupkg.sha512"
     },
+    "cldrjs/0.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WQ5Ey4MYeDjzFMSmaB6zDhxcjn+DN2zB2ahYemOZiQ1WhrMI8mXz/ssv3difmF545sOSmrliHOzRmjst6+Kd8Q==",
+      "path": "cldrjs/0.4.1",
+      "hashPath": "cldrjs.0.4.1.nupkg.sha512"
+    },
     "jQuery/3.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-xFfntV19HzCtKdJWOp/XT9PUY3SslokTDDLFJZdBug36j1XVhw1+vPQ/n7Gd5y+jdpesn5B1m1yn1qIUq57jlA==",
       "path": "jquery/3.0.0",
       "hashPath": "jquery.3.0.0.nupkg.sha512"
+    },
+    "jquery-globalize/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lQMu3s31x6fy6uC/sSOnjl1FPbHkhhswKvGuvXMChEWImC+CKAQZ9YscMnNn94T9w4KHXoG9NSipXlgFbgBXYg==",
+      "path": "jquery-globalize/1.0.0",
+      "hashPath": "jquery-globalize.1.0.0.nupkg.sha512"
+    },
+    "jQuery.Validation/1.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gNwKPzHsNk/TbLQVCUl4vagUMoCfdnKQwKf2uy+grKFlSK3J872/4xrABIfKWdhSgK2sAYijDswQq6Z82d5S1w==",
+      "path": "jquery.validation/1.14.0",
+      "hashPath": "jquery.validation.1.14.0.nupkg.sha512"
+    },
+    "jQuery.Validation.Globalize/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qzka221RX45z642DOhlxGg/wvW4w8Md2Q02deZ0j6EfgyQEnXdLAeHw5xMK9EuFCjWoRbmISt/oFsJAvKqnmCA==",
+      "path": "jquery.validation.globalize/1.1.0",
+      "hashPath": "jquery.validation.globalize.1.1.0.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",

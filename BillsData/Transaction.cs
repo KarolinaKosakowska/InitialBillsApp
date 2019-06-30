@@ -31,11 +31,12 @@ namespace BillsData
         public Nullable<int> PaymentTypeID { get; set; }
         public virtual TransactionCategory TransactionCategory { get; set; }
         public virtual IdentityUser User { get; set; }
-  
+        public string UserID { get; set; }
         [Display(Name = "Payment type")]
         public virtual PaymentType PaymentType { get; set; }
         public virtual ICollection<TransactionTag> TransactionTags { get; set; }
         public virtual ICollection<TransactionElement> TransactionElements { get; set; }
+        [Display(Name = "Attachment/bill")]
         public virtual ICollection<File> Files { get; set; }
     }
 }

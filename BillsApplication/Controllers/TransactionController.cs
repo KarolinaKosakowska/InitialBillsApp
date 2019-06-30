@@ -8,11 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using BillsApplication.Data;
 using BillsData;
 using BillsApplication.Models.TransactionForm;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
 
 namespace BillsApplication.Controllers
 {
     public class TransactionController : Controller
     {
+        //private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ITransaction assets;
 
         public TransactionController(ITransaction assets)
@@ -69,7 +72,8 @@ namespace BillsApplication.Controllers
         // GET: Transaction/Create
         public IActionResult Create()
         {
-            ;
+            ViewData["PaymentTypeID"] = assets.GetPaymentTypes();
+            ViewData["TransactionCategoryID"] = assets.GetTransactionCategories();
             return View();
         }
 
@@ -82,10 +86,13 @@ namespace BillsApplication.Controllers
         {
             if (ModelState.IsValid)
             {
+               // transaction.UserID = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
                 assets.Add(transaction);
                 return RedirectToAction(nameof(Index));
             }
-
+            ViewData["PaymentTypeID"] = assets.GetPaymentTypes();
+            ViewData["TransactionCategoryID"] = assets.GetTransactionCategories();
             return View(transaction);
         }
     }
