@@ -60,7 +60,7 @@ namespace BillsApplication.Controllers
                 TransactionDate = asset.TransactionDate,
                 Price = asset.Price,
                 PaymentType = assets.GetPaymentType(id),
-                CreationDate = asset.CreateDate,
+                CreationDate = DateTime.Now,
                 ModyficationDate = asset.ModyficationDate,
                 TransactionTags = assets.GetTransactionTag(id),
                 Product = assets.GetProduct(id),

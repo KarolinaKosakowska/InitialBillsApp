@@ -82,7 +82,7 @@ using BillsApplication.Models;
             <th>");
             EndContext();
             BeginContext(438, 120, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a1ce347b51a402393b241a4f41a6fe5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cf087ffc107647128283a5dc0ab8836f", async() => {
                 BeginContext(492, 62, true);
                 WriteLiteral("<i style=\"color: white;\" class=\"glyphicon glyphicon-plus\"></i>");
                 EndContext();
@@ -174,7 +174,7 @@ using BillsApplication.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1314, 128, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7aa415f7b6a54def95b1df189cb08b92", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7db8854ea7c494ab5b03fdfbdbb97ed", async() => {
                 BeginContext(1359, 79, true);
                 WriteLiteral("<i style=\"color: blue;margin-right:10px\"class=\"glyphicon glyphicon-pencil\"></i>");
                 EndContext();
@@ -209,7 +209,7 @@ using BillsApplication.Models;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1460, 138, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fe649062dae945439328e217e001e1fe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cf4261f85434e28ba6f485033d2b086", async() => {
                 BeginContext(1508, 86, true);
                 WriteLiteral("<i style=\"color:gray;margin-right:10px\"class=\"glyphicon glyphicon-menu-hamburger\"></i>");
                 EndContext();
@@ -244,7 +244,7 @@ using BillsApplication.Models;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1616, 128, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e605e3433a1b4b13a1d736e12af5c7a1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a1275840b5140a48ba47382c1b7bc42", async() => {
                 BeginContext(1663, 77, true);
                 WriteLiteral("<i style=\"color:red;margin-right:10px\" class=\"glyphicon glyphicon-trash\"></i>");
                 EndContext();
