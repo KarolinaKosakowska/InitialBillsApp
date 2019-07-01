@@ -7,6 +7,6 @@ namespace BillsApplication.Models.TransactionForm
 {
     public class TransactionIndexModel
     {
-        public IEnumerable<TransactionListingModel>Transactions { get; set; }
+        public IEnumerable<TransactionListingModel>TransactionsListingModels { get; set; }
     }
 }

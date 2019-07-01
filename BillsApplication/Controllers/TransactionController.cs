@@ -41,7 +41,7 @@ namespace BillsApplication.Controllers
                 });
             var model = new TransactionIndexModel()
             {
-                Transactions = listingResult
+                TransactionsListingModels = listingResult
             };
             return View(model);
         }

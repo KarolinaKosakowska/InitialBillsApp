@@ -41,19 +41,19 @@ namespace BillsApplication
         }
         public string GetCategory(int id)
         {
-            if (context.TransactionCategories.Any(a => a.ID == id))
+            if (context.Transactions.Any(a => a.ID == id))
             {
-                return context.TransactionCategories
-                    .FirstOrDefault(a => a.ID == id).Name;
+                return context.Transactions
+                    .FirstOrDefault(a => a.ID == id).TransactionCategory.Name;
             }
             else return "";
         }
         public string GetPaymentType(int id)
         {
-            if (context.PaymentTypes.Any(a => a.ID == id))
+            if (context.Transactions.Any(a => a.ID == id))
             {
-                return context.PaymentTypes
-                    .FirstOrDefault(a => a.ID == id).PaymentName.ToString();
+                return context.Transactions
+                    .FirstOrDefault(a => a.ID == id).PaymentType.PaymentName.ToString();
             }
             else return "";
         }

@@ -22,11 +22,12 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Transactions)
+        @foreach (var item in Model.TransactionsListingModels)
         {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.TransactionCategory)</td>
+                @Html.DisplayFor(modelItem => item.TransactionCategory)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>

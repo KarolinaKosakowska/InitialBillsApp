@@ -11,7 +11,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data" method="post">
+        <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             @*<div class="form-group">
                 <label asp-for="TransactionCategory.Name" class="control-label">Category</label>
@@ -47,11 +47,6 @@
                 <label asp-for="PaymentType" class="control-label"></label>
                 @*<select asp-for="PaymentType" class="form-control" asp-items="ViewBag.PaymentType"></select>*@
                 <select asp-for="PaymentTypeID" class="form-control" asp-items="ViewBag.PaymentTypeID"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Files" class="control-label"></label>
-                <input asp-for="Files" type="file" class="form-control" />
-                <span asp-validation-for="Files" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />

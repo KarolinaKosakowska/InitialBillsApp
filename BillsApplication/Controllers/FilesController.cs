@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BillsApplication.Data;
 using BillsData;
+using Microsoft.AspNetCore.Http;
 
 namespace BillsApplication.Controllers
 {
@@ -57,10 +58,11 @@ namespace BillsApplication.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,TransactionID,Attachment")] File file)
+        public async Task<IActionResult> Create(File file)
         {
             if (ModelState.IsValid)
             {
+                file.Attachment = setAttachment(file.FormFile);
                 _context.Add(file);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -68,7 +70,14 @@ namespace BillsApplication.Controllers
             ViewData["TransactionID"] = new SelectList(_context.Transactions, "ID", "ID", file.TransactionID);
             return View(file);
         }
-
+        private byte[] setAttachment(IFormFile formFile)
+        {
+            using (var memoryStream = new System.IO.MemoryStream())
+            {
+                formFile.CopyTo(memoryStream);
+                return memoryStream.ToArray();
+            }
+        }
         // GET: Files/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
